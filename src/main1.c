@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../lib/src"
+#include "../lib/src/distancias.h"
 
 int main(int argc, char *argv[]) {   
    
@@ -7,11 +7,11 @@ int main(int argc, char *argv[]) {
 	int dhoriz, dvert;
 	
 	dlrecta = dlr( 3, 4, 10, 12 );
-	printf(“Distancia en línea recta: %d\n”, directa);
+	printf("Distancia en línea recta: %f\n", dlrecta);
 	dhoriz = dh( 3, 4, 10, 12 );
 	dvert = dv( 3, 4, 10, 12 );
-      printf(“Distancia horizontal: %d\n”, dhoriz);
-      printf(“Distancia vertical: %d\n”, dvert);
+      printf("Distancia horizontal: %d\n", dhoriz);
+      printf("Distancia vertical: %d\n", dvert);
       
       return 0;
 }
